@@ -1,6 +1,6 @@
-# AgentDatimu
+# AgentDatimus
 
-**AgentDatimu** generates Prometheus metrics based on a simple, time-based configuration file.
+**AgentDatimus** generates Prometheus metrics based on a simple, time-based configuration file.
 It's particularly useful for defining dynamic thresholds that change throughout the week, making your **Alertmanager** alerts more context-aware.
 
 ---
