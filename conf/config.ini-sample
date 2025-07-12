@@ -1,0 +1,1003 @@
+[metrics]
+metric_1 = fri 04:00;fri 05:00=8
+            fri 09:00;fri 10:00=7
+            fri 17:00;fri 18:00=3
+            thu 16:00;thu 17:00=9
+            sun 01:00;sun 02:00=7
+
+metric_2 = sat 04:00;sat 05:00=10
+            tue 06:00;tue 07:00=5
+            thu 00:00;thu 01:00=10
+
+metric_3 = thu 21:00;thu 22:00=10
+            wed 13:00;wed 14:00=10
+            sun 06:00;sun 07:00=6
+            tue 17:00;tue 18:00=1
+
+metric_4 = fri 10:00;fri 11:00=10
+            fri 12:00;fri 13:00=5
+            sun 09:00;sun 10:00=5
+            mon 17:00;mon 18:00=2
+            mon 15:00;mon 16:00=5
+
+metric_5 = thu 19:00;thu 20:00=2
+            sat 07:00;sat 08:00=5
+            sun 14:00;sun 15:00=7
+            wed 16:00;wed 17:00=8
+
+metric_6 = sun 21:00;sun 22:00=6
+            sun 05:00;sun 06:00=5
+            fri 13:00;fri 14:00=9
+            thu 20:00;thu 21:00=8
+
+metric_7 = thu 05:00;thu 06:00=5
+            thu 12:00;thu 13:00=5
+            fri 17:00;fri 18:00=10
+
+metric_8 = sat 20:00;sat 21:00=1
+            sat 07:00;sat 08:00=4
+            tue 02:00;tue 03:00=1
+            sun 20:00;sun 21:00=10
+            fri 03:00;fri 04:00=9
+
+metric_9 = mon 09:00;mon 10:00=4
+            wed 16:00;wed 17:00=9
+            thu 20:00;thu 21:00=8
+            wed 00:00;wed 01:00=9
+            thu 12:00;thu 13:00=7
+
+metric_10 = sun 21:00;sun 22:00=7
+            wed 22:00;wed 23:00=9
+            tue 19:00;tue 20:00=8
+
+metric_11 = fri 21:00;fri 22:00=2
+            fri 12:00;fri 13:00=6
+            wed 15:00;wed 16:00=9
+
+metric_12 = wed 15:00;wed 16:00=9
+            tue 22:00;tue 23:00=9
+            thu 17:00;thu 18:00=8
+            mon 04:00;mon 05:00=8
+
+metric_13 = sat 15:00;sat 16:00=3
+            thu 16:00;thu 17:00=8
+            wed 00:00;wed 01:00=3
+            sun 13:00;sun 14:00=8
+            fri 19:00;fri 20:00=4
+
+metric_14 = tue 11:00;tue 12:00=7
+            fri 07:00;fri 08:00=4
+            mon 02:00;mon 03:00=1
+            wed 20:00;wed 21:00=2
+
+metric_15 = tue 19:00;tue 20:00=5
+            tue 22:00;tue 23:00=2
+            sat 11:00;sat 12:00=4
+            fri 19:00;fri 20:00=4
+            wed 02:00;wed 03:00=2
+
+metric_16 = fri 03:00;fri 04:00=4
+            wed 15:00;wed 16:00=3
+            mon 00:00;mon 01:00=2
+            sat 04:00;sat 05:00=8
+
+metric_17 = fri 03:00;fri 04:00=10
+            thu 01:00;thu 02:00=3
+            fri 09:00;fri 10:00=10
+            sat 09:00;sat 10:00=8
+
+metric_18 = sun 11:00;sun 12:00=4
+            fri 01:00;fri 02:00=10
+            sun 06:00;sun 07:00=4
+
+metric_19 = sun 11:00;sun 12:00=7
+            wed 11:00;wed 12:00=1
+            thu 02:00;thu 03:00=5
+            mon 17:00;mon 18:00=1
+
+metric_20 = wed 09:00;wed 10:00=5
+            sat 10:00;sat 11:00=9
+            thu 20:00;thu 21:00=10
+            sun 06:00;sun 07:00=3
+
+metric_21 = tue 00:00;tue 01:00=7
+            thu 16:00;thu 17:00=10
+            thu 05:00;thu 06:00=9
+
+metric_22 = sat 14:00;sat 15:00=2
+            thu 13:00;thu 14:00=8
+            thu 20:00;thu 21:00=3
+            wed 01:00;wed 02:00=5
+
+metric_23 = tue 11:00;tue 12:00=4
+            mon 21:00;mon 22:00=4
+            thu 15:00;thu 16:00=2
+            mon 05:00;mon 06:00=9
+            thu 13:00;thu 14:00=2
+
+metric_24 = sat 06:00;sat 07:00=4
+            thu 02:00;thu 03:00=2
+            thu 17:00;thu 18:00=4
+
+metric_25 = mon 16:00;mon 17:00=3
+            mon 20:00;mon 21:00=2
+            thu 22:00;thu 23:00=9
+            thu 05:00;thu 06:00=2
+            sun 22:00;sun 23:00=2
+
+metric_26 = thu 08:00;thu 09:00=3
+            fri 07:00;fri 08:00=5
+            thu 10:00;thu 11:00=7
+            tue 19:00;tue 20:00=10
+
+metric_27 = wed 05:00;wed 06:00=6
+            thu 01:00;thu 02:00=10
+            mon 12:00;mon 13:00=3
+            sun 16:00;sun 17:00=4
+
+metric_28 = sun 11:00;sun 12:00=2
+            sat 17:00;sat 18:00=4
+            thu 05:00;thu 06:00=8
+
+metric_29 = wed 12:00;wed 13:00=4
+            tue 07:00;tue 08:00=4
+            sun 16:00;sun 17:00=9
+            wed 14:00;wed 15:00=10
+            mon 16:00;mon 17:00=3
+
+metric_30 = thu 07:00;thu 08:00=10
+            tue 10:00;tue 11:00=10
+            thu 16:00;thu 17:00=2
+
+metric_31 = wed 16:00;wed 17:00=10
+            mon 21:00;mon 22:00=5
+            wed 22:00;wed 23:00=10
+
+metric_32 = mon 12:00;mon 13:00=4
+            wed 14:00;wed 15:00=7
+            sun 00:00;sun 01:00=6
+            sun 07:00;sun 08:00=4
+
+metric_33 = mon 01:00;mon 02:00=6
+            sat 18:00;sat 19:00=3
+            wed 19:00;wed 20:00=10
+            wed 14:00;wed 15:00=5
+
+metric_34 = thu 17:00;thu 18:00=3
+            tue 18:00;tue 19:00=1
+            sat 14:00;sat 15:00=8
+            sun 00:00;sun 01:00=2
+            sun 18:00;sun 19:00=9
+
+metric_35 = fri 00:00;fri 01:00=9
+            sun 21:00;sun 22:00=5
+            thu 09:00;thu 10:00=3
+
+metric_36 = sat 09:00;sat 10:00=9
+            sun 07:00;sun 08:00=3
+            thu 16:00;thu 17:00=5
+            sat 05:00;sat 06:00=7
+
+metric_37 = sun 01:00;sun 02:00=2
+            fri 11:00;fri 12:00=3
+            sat 13:00;sat 14:00=7
+
+metric_38 = sat 06:00;sat 07:00=6
+            mon 05:00;mon 06:00=5
+            mon 07:00;mon 08:00=10
+            thu 13:00;thu 14:00=1
+
+metric_39 = fri 15:00;fri 16:00=5
+            sat 02:00;sat 03:00=3
+            sat 18:00;sat 19:00=2
+
+metric_40 = fri 15:00;fri 16:00=4
+            mon 01:00;mon 02:00=6
+            fri 21:00;fri 22:00=10
+            fri 04:00;fri 05:00=1
+            thu 17:00;thu 18:00=5
+
+metric_41 = sat 13:00;sat 14:00=9
+            thu 10:00;thu 11:00=8
+            thu 08:00;thu 09:00=5
+            tue 15:00;tue 16:00=5
+
+metric_42 = fri 10:00;fri 11:00=3
+            wed 04:00;wed 05:00=7
+            sun 17:00;sun 18:00=9
+            wed 20:00;wed 21:00=4
+            tue 01:00;tue 02:00=10
+
+metric_43 = thu 21:00;thu 22:00=2
+            sun 19:00;sun 20:00=3
+            fri 14:00;fri 15:00=10
+            thu 20:00;thu 21:00=8
+            fri 17:00;fri 18:00=3
+
+metric_44 = sun 14:00;sun 15:00=1
+            fri 01:00;fri 02:00=1
+            thu 03:00;thu 04:00=2
+            sat 10:00;sat 11:00=3
+
+metric_45 = sat 10:00;sat 11:00=4
+            fri 04:00;fri 05:00=8
+            wed 00:00;wed 01:00=4
+
+metric_46 = sat 19:00;sat 20:00=5
+            mon 00:00;mon 01:00=3
+            fri 12:00;fri 13:00=3
+            sun 11:00;sun 12:00=7
+            sun 03:00;sun 04:00=4
+
+metric_47 = wed 13:00;wed 14:00=9
+            sun 17:00;sun 18:00=2
+            tue 20:00;tue 21:00=3
+            thu 01:00;thu 02:00=2
+
+metric_48 = tue 20:00;tue 21:00=2
+            wed 09:00;wed 10:00=8
+            mon 13:00;mon 14:00=7
+
+metric_49 = wed 21:00;wed 22:00=4
+            tue 09:00;tue 10:00=6
+            wed 12:00;wed 13:00=2
+            sun 00:00;sun 01:00=3
+
+metric_50 = wed 17:00;wed 18:00=6
+            fri 21:00;fri 22:00=6
+            fri 22:00;fri 23:00=1
+            mon 22:00;mon 23:00=4
+            tue 22:00;tue 23:00=3
+
+metric_51 = wed 21:00;wed 22:00=4
+            sun 00:00;sun 01:00=9
+            tue 10:00;tue 11:00=2
+            tue 12:00;tue 13:00=4
+
+metric_52 = tue 05:00;tue 06:00=7
+            wed 22:00;wed 23:00=3
+            tue 10:00;tue 11:00=9
+
+metric_53 = tue 09:00;tue 10:00=6
+            fri 02:00;fri 03:00=3
+            thu 20:00;thu 21:00=2
+            fri 19:00;fri 20:00=10
+            sun 16:00;sun 17:00=7
+
+metric_54 = tue 04:00;tue 05:00=1
+            fri 02:00;fri 03:00=3
+            fri 16:00;fri 17:00=5
+            mon 02:00;mon 03:00=8
+            mon 07:00;mon 08:00=2
+
+metric_55 = mon 07:00;mon 08:00=9
+            thu 10:00;thu 11:00=3
+            sat 15:00;sat 16:00=2
+
+metric_56 = sun 00:00;sun 01:00=6
+            wed 13:00;wed 14:00=3
+            mon 19:00;mon 20:00=6
+
+metric_57 = wed 16:00;wed 17:00=1
+            sun 09:00;sun 10:00=5
+            sat 15:00;sat 16:00=8
+            sat 06:00;sat 07:00=1
+
+metric_58 = fri 13:00;fri 14:00=10
+            wed 01:00;wed 02:00=6
+            thu 13:00;thu 14:00=2
+            wed 07:00;wed 08:00=8
+            sun 16:00;sun 17:00=2
+
+metric_59 = thu 16:00;thu 17:00=3
+            tue 02:00;tue 03:00=7
+            wed 13:00;wed 14:00=3
+            sun 21:00;sun 22:00=8
+            mon 09:00;mon 10:00=2
+
+metric_60 = sun 03:00;sun 04:00=4
+            wed 21:00;wed 22:00=5
+            fri 07:00;fri 08:00=3
+            sun 16:00;sun 17:00=2
+            wed 02:00;wed 03:00=6
+
+metric_61 = mon 00:00;mon 01:00=6
+            fri 15:00;fri 16:00=2
+            sat 08:00;sat 09:00=3
+            thu 05:00;thu 06:00=8
+
+metric_62 = sun 11:00;sun 12:00=4
+            sun 20:00;sun 21:00=1
+            thu 10:00;thu 11:00=6
+            thu 13:00;thu 14:00=9
+
+metric_63 = wed 17:00;wed 18:00=10
+            mon 19:00;mon 20:00=5
+            tue 11:00;tue 12:00=1
+            wed 15:00;wed 16:00=5
+            fri 07:00;fri 08:00=2
+
+metric_64 = thu 12:00;thu 13:00=2
+            mon 11:00;mon 12:00=5
+            tue 12:00;tue 13:00=8
+
+metric_65 = sun 06:00;sun 07:00=7
+            tue 14:00;tue 15:00=9
+            sun 17:00;sun 18:00=7
+            mon 11:00;mon 12:00=8
+
+metric_66 = mon 20:00;mon 21:00=10
+            mon 15:00;mon 16:00=5
+            sat 10:00;sat 11:00=10
+            tue 22:00;tue 23:00=1
+            wed 06:00;wed 07:00=8
+
+metric_67 = mon 16:00;mon 17:00=2
+            fri 01:00;fri 02:00=2
+            tue 06:00;tue 07:00=10
+            fri 03:00;fri 04:00=8
+
+metric_68 = tue 11:00;tue 12:00=9
+            tue 13:00;tue 14:00=1
+            sat 18:00;sat 19:00=4
+            wed 19:00;wed 20:00=5
+            tue 14:00;tue 15:00=1
+
+metric_69 = mon 22:00;mon 23:00=1
+            mon 03:00;mon 04:00=1
+            sun 04:00;sun 05:00=7
+
+metric_70 = thu 17:00;thu 18:00=9
+            mon 01:00;mon 02:00=8
+            wed 20:00;wed 21:00=8
+
+metric_71 = thu 14:00;thu 15:00=10
+            sat 21:00;sat 22:00=1
+            fri 15:00;fri 16:00=7
+            tue 08:00;tue 09:00=6
+            tue 17:00;tue 18:00=10
+
+metric_72 = fri 21:00;fri 22:00=7
+            tue 02:00;tue 03:00=1
+            wed 09:00;wed 10:00=10
+            sat 09:00;sat 10:00=9
+
+metric_73 = wed 14:00;wed 15:00=8
+            sun 01:00;sun 02:00=8
+            fri 15:00;fri 16:00=8
+            tue 18:00;tue 19:00=3
+            tue 16:00;tue 17:00=7
+
+metric_74 = wed 13:00;wed 14:00=7
+            sat 12:00;sat 13:00=2
+            sat 22:00;sat 23:00=4
+            sat 00:00;sat 01:00=4
+            wed 22:00;wed 23:00=2
+
+metric_75 = wed 17:00;wed 18:00=4
+            mon 13:00;mon 14:00=5
+            tue 02:00;tue 03:00=3
+
+metric_76 = fri 04:00;fri 05:00=7
+            thu 22:00;thu 23:00=1
+            wed 00:00;wed 01:00=3
+            sun 20:00;sun 21:00=10
+
+metric_77 = tue 00:00;tue 01:00=6
+            sat 18:00;sat 19:00=5
+            thu 22:00;thu 23:00=9
+            tue 14:00;tue 15:00=5
+
+metric_78 = sat 21:00;sat 22:00=1
+            mon 11:00;mon 12:00=6
+            sat 05:00;sat 06:00=6
+
+metric_79 = wed 14:00;wed 15:00=1
+            tue 18:00;tue 19:00=1
+            sat 08:00;sat 09:00=1
+
+metric_80 = tue 11:00;tue 12:00=9
+            mon 01:00;mon 02:00=1
+            fri 04:00;fri 05:00=5
+
+metric_81 = sat 18:00;sat 19:00=2
+            fri 02:00;fri 03:00=1
+            thu 22:00;thu 23:00=7
+
+metric_82 = thu 09:00;thu 10:00=7
+            sun 12:00;sun 13:00=5
+            sun 22:00;sun 23:00=7
+            mon 21:00;mon 22:00=6
+            mon 07:00;mon 08:00=3
+
+metric_83 = thu 08:00;thu 09:00=9
+            fri 18:00;fri 19:00=7
+            mon 16:00;mon 17:00=5
+
+metric_84 = tue 10:00;tue 11:00=2
+            mon 14:00;mon 15:00=3
+            thu 02:00;thu 03:00=2
+
+metric_85 = fri 13:00;fri 14:00=7
+            sat 11:00;sat 12:00=1
+            mon 15:00;mon 16:00=3
+            wed 18:00;wed 19:00=2
+
+metric_86 = sat 03:00;sat 04:00=2
+            sun 06:00;sun 07:00=4
+            mon 11:00;mon 12:00=4
+            wed 15:00;wed 16:00=5
+
+metric_87 = wed 19:00;wed 20:00=7
+            tue 10:00;tue 11:00=6
+            mon 07:00;mon 08:00=3
+
+metric_88 = tue 18:00;tue 19:00=8
+            thu 22:00;thu 23:00=1
+            thu 18:00;thu 19:00=5
+
+metric_89 = sat 04:00;sat 05:00=6
+            thu 05:00;thu 06:00=1
+            thu 08:00;thu 09:00=10
+            wed 21:00;wed 22:00=1
+            wed 03:00;wed 04:00=6
+
+metric_90 = fri 03:00;fri 04:00=3
+            wed 03:00;wed 04:00=9
+            fri 13:00;fri 14:00=10
+
+metric_91 = wed 22:00;wed 23:00=9
+            tue 04:00;tue 05:00=5
+            mon 01:00;mon 02:00=10
+
+metric_92 = fri 00:00;fri 01:00=9
+            sun 22:00;sun 23:00=9
+            mon 13:00;mon 14:00=9
+
+metric_93 = tue 00:00;tue 01:00=6
+            wed 21:00;wed 22:00=1
+            thu 19:00;thu 20:00=3
+
+metric_94 = sat 10:00;sat 11:00=2
+            fri 11:00;fri 12:00=9
+            thu 09:00;thu 10:00=2
+
+metric_95 = sat 02:00;sat 03:00=3
+            mon 02:00;mon 03:00=1
+            sat 17:00;sat 18:00=2
+
+metric_96 = thu 07:00;thu 08:00=3
+            fri 13:00;fri 14:00=2
+            thu 06:00;thu 07:00=7
+
+metric_97 = tue 17:00;tue 18:00=7
+            sat 01:00;sat 02:00=5
+            sun 05:00;sun 06:00=7
+            sun 13:00;sun 14:00=4
+            fri 06:00;fri 07:00=6
+
+metric_98 = wed 19:00;wed 20:00=2
+            sun 13:00;sun 14:00=9
+            sun 00:00;sun 01:00=6
+            wed 20:00;wed 21:00=1
+            sun 18:00;sun 19:00=1
+
+metric_99 = mon 07:00;mon 08:00=2
+            tue 20:00;tue 21:00=10
+            mon 12:00;mon 13:00=3
+            mon 01:00;mon 02:00=10
+            fri 17:00;fri 18:00=1
+
+metric_100 = sun 14:00;sun 15:00=1
+            mon 00:00;mon 01:00=3
+            sun 16:00;sun 17:00=4
+            sun 18:00;sun 19:00=5
+
+metric_101 = sat 18:00;sat 19:00=6
+            tue 14:00;tue 15:00=6
+            tue 17:00;tue 18:00=2
+            sat 15:00;sat 16:00=10
+            sun 07:00;sun 08:00=7
+
+metric_102 = wed 04:00;wed 05:00=9
+            fri 17:00;fri 18:00=9
+            thu 17:00;thu 18:00=7
+
+metric_103 = wed 01:00;wed 02:00=10
+            tue 22:00;tue 23:00=10
+            wed 12:00;wed 13:00=4
+            mon 03:00;mon 04:00=7
+
+metric_104 = mon 08:00;mon 09:00=4
+            thu 18:00;thu 19:00=5
+            sat 18:00;sat 19:00=3
+            sat 04:00;sat 05:00=8
+
+metric_105 = sat 10:00;sat 11:00=3
+            sun 17:00;sun 18:00=2
+            tue 22:00;tue 23:00=6
+            tue 18:00;tue 19:00=3
+            thu 19:00;thu 20:00=4
+
+metric_106 = mon 20:00;mon 21:00=3
+            sat 01:00;sat 02:00=8
+            mon 09:00;mon 10:00=9
+            mon 10:00;mon 11:00=7
+
+metric_107 = mon 03:00;mon 04:00=6
+            wed 13:00;wed 14:00=6
+            wed 02:00;wed 03:00=1
+            fri 10:00;fri 11:00=4
+            fri 15:00;fri 16:00=6
+
+metric_108 = sat 19:00;sat 20:00=5
+            wed 11:00;wed 12:00=10
+            tue 14:00;tue 15:00=4
+
+metric_109 = wed 21:00;wed 22:00=10
+            mon 12:00;mon 13:00=6
+            tue 16:00;tue 17:00=2
+
+metric_110 = thu 07:00;thu 08:00=4
+            sun 02:00;sun 03:00=1
+            mon 05:00;mon 06:00=5
+            sun 11:00;sun 12:00=1
+
+metric_111 = sun 12:00;sun 13:00=7
+            fri 15:00;fri 16:00=7
+            mon 11:00;mon 12:00=4
+            wed 17:00;wed 18:00=6
+
+metric_112 = wed 22:00;wed 23:00=6
+            sat 08:00;sat 09:00=3
+            thu 05:00;thu 06:00=4
+            tue 21:00;tue 22:00=9
+
+metric_113 = sun 02:00;sun 03:00=1
+            mon 03:00;mon 04:00=7
+            wed 21:00;wed 22:00=9
+            mon 06:00;mon 07:00=9
+            sun 03:00;sun 04:00=3
+
+metric_114 = thu 19:00;thu 20:00=10
+            sun 08:00;sun 09:00=7
+            fri 15:00;fri 16:00=4
+
+metric_115 = sat 21:00;sat 22:00=5
+            mon 08:00;mon 09:00=7
+            fri 03:00;fri 04:00=5
+            sun 17:00;sun 18:00=6
+
+metric_116 = thu 06:00;thu 07:00=7
+            fri 18:00;fri 19:00=2
+            wed 22:00;wed 23:00=6
+
+metric_117 = tue 15:00;tue 16:00=5
+            thu 03:00;thu 04:00=7
+            wed 14:00;wed 15:00=9
+            thu 08:00;thu 09:00=1
+
+metric_118 = fri 19:00;fri 20:00=4
+            wed 03:00;wed 04:00=9
+            sat 09:00;sat 10:00=2
+            wed 02:00;wed 03:00=3
+            sat 11:00;sat 12:00=3
+
+metric_119 = thu 08:00;thu 09:00=10
+            mon 19:00;mon 20:00=1
+            wed 04:00;wed 05:00=5
+
+metric_120 = sun 17:00;sun 18:00=1
+            sun 03:00;sun 04:00=4
+            sun 19:00;sun 20:00=6
+
+metric_121 = fri 19:00;fri 20:00=2
+            wed 11:00;wed 12:00=6
+            wed 20:00;wed 21:00=2
+            mon 02:00;mon 03:00=7
+            mon 16:00;mon 17:00=5
+
+metric_122 = tue 15:00;tue 16:00=9
+            tue 10:00;tue 11:00=1
+            fri 18:00;fri 19:00=3
+            wed 19:00;wed 20:00=8
+
+metric_123 = fri 16:00;fri 17:00=9
+            thu 05:00;thu 06:00=6
+            fri 19:00;fri 20:00=7
+            thu 07:00;thu 08:00=7
+            thu 01:00;thu 02:00=1
+
+metric_124 = wed 21:00;wed 22:00=6
+            thu 21:00;thu 22:00=5
+            fri 03:00;fri 04:00=4
+
+metric_125 = sun 18:00;sun 19:00=8
+            wed 16:00;wed 17:00=9
+            thu 02:00;thu 03:00=2
+
+metric_126 = tue 13:00;tue 14:00=7
+            sun 20:00;sun 21:00=10
+            tue 18:00;tue 19:00=10
+            sun 04:00;sun 05:00=2
+
+metric_127 = fri 09:00;fri 10:00=8
+            mon 17:00;mon 18:00=4
+            sat 02:00;sat 03:00=4
+            thu 22:00;thu 23:00=2
+
+metric_128 = tue 07:00;tue 08:00=6
+            thu 08:00;thu 09:00=5
+            fri 07:00;fri 08:00=3
+            wed 04:00;wed 05:00=2
+
+metric_129 = fri 16:00;fri 17:00=9
+            sun 13:00;sun 14:00=1
+            sun 10:00;sun 11:00=2
+
+metric_130 = fri 11:00;fri 12:00=1
+            sun 17:00;sun 18:00=3
+            sun 00:00;sun 01:00=9
+            thu 08:00;thu 09:00=7
+
+metric_131 = sun 04:00;sun 05:00=4
+            mon 08:00;mon 09:00=8
+            fri 13:00;fri 14:00=2
+            mon 14:00;mon 15:00=5
+
+metric_132 = sat 12:00;sat 13:00=1
+            thu 13:00;thu 14:00=5
+            fri 18:00;fri 19:00=5
+            tue 19:00;tue 20:00=5
+
+metric_133 = sat 00:00;sat 01:00=3
+            mon 13:00;mon 14:00=6
+            mon 00:00;mon 01:00=8
+            thu 11:00;thu 12:00=3
+            mon 11:00;mon 12:00=1
+
+metric_134 = sat 20:00;sat 21:00=5
+            mon 14:00;mon 15:00=5
+            sat 08:00;sat 09:00=9
+
+metric_135 = sun 14:00;sun 15:00=4
+            thu 22:00;thu 23:00=2
+            thu 17:00;thu 18:00=6
+            mon 12:00;mon 13:00=6
+            tue 08:00;tue 09:00=8
+
+metric_136 = sun 20:00;sun 21:00=10
+            fri 10:00;fri 11:00=5
+            sun 01:00;sun 02:00=2
+            tue 20:00;tue 21:00=10
+            fri 18:00;fri 19:00=9
+
+metric_137 = thu 10:00;thu 11:00=7
+            thu 21:00;thu 22:00=3
+            sat 22:00;sat 23:00=2
+
+metric_138 = wed 10:00;wed 11:00=1
+            fri 22:00;fri 23:00=2
+            thu 04:00;thu 05:00=8
+            tue 12:00;tue 13:00=5
+
+metric_139 = sun 03:00;sun 04:00=9
+            fri 00:00;fri 01:00=9
+            wed 00:00;wed 01:00=3
+            tue 22:00;tue 23:00=2
+            sat 18:00;sat 19:00=3
+
+metric_140 = sat 19:00;sat 20:00=4
+            wed 01:00;wed 02:00=1
+            wed 09:00;wed 10:00=10
+            sun 06:00;sun 07:00=8
+
+metric_141 = sat 01:00;sat 02:00=4
+            thu 08:00;thu 09:00=6
+            fri 09:00;fri 10:00=10
+            thu 11:00;thu 12:00=6
+
+metric_142 = tue 11:00;tue 12:00=5
+            thu 16:00;thu 17:00=6
+            fri 03:00;fri 04:00=9
+            sun 01:00;sun 02:00=3
+            fri 09:00;fri 10:00=2
+
+metric_143 = fri 15:00;fri 16:00=8
+            mon 06:00;mon 07:00=4
+            sun 08:00;sun 09:00=9
+
+metric_144 = fri 15:00;fri 16:00=8
+            sun 12:00;sun 13:00=7
+            sun 22:00;sun 23:00=9
+            mon 02:00;mon 03:00=1
+            tue 11:00;tue 12:00=10
+
+metric_145 = thu 13:00;thu 14:00=9
+            tue 12:00;tue 13:00=6
+            fri 15:00;fri 16:00=1
+
+metric_146 = sun 11:00;sun 12:00=4
+            tue 04:00;tue 05:00=9
+            sun 21:00;sun 22:00=7
+            fri 14:00;fri 15:00=3
+            mon 00:00;mon 01:00=6
+
+metric_147 = fri 00:00;fri 01:00=1
+            sat 11:00;sat 12:00=3
+            wed 17:00;wed 18:00=5
+
+metric_148 = wed 04:00;wed 05:00=7
+            wed 11:00;wed 12:00=8
+            thu 17:00;thu 18:00=10
+
+metric_149 = sun 02:00;sun 03:00=5
+            fri 11:00;fri 12:00=5
+            fri 16:00;fri 17:00=4
+            sun 06:00;sun 07:00=8
+
+metric_150 = tue 02:00;tue 03:00=1
+            mon 09:00;mon 10:00=4
+            thu 10:00;thu 11:00=3
+            sat 18:00;sat 19:00=4
+            wed 09:00;wed 10:00=3
+
+metric_151 = wed 12:00;wed 13:00=4
+            wed 09:00;wed 10:00=2
+            fri 17:00;fri 18:00=8
+            thu 17:00;thu 18:00=4
+
+metric_152 = wed 07:00;wed 08:00=1
+            sat 09:00;sat 10:00=8
+            wed 19:00;wed 20:00=4
+            tue 03:00;tue 04:00=1
+
+metric_153 = thu 09:00;thu 10:00=6
+            sun 06:00;sun 07:00=3
+            fri 15:00;fri 16:00=1
+            wed 13:00;wed 14:00=6
+            thu 04:00;thu 05:00=4
+
+metric_154 = tue 22:00;tue 23:00=5
+            sun 06:00;sun 07:00=6
+            mon 09:00;mon 10:00=8
+            fri 16:00;fri 17:00=6
+
+metric_155 = thu 01:00;thu 02:00=3
+            sat 10:00;sat 11:00=5
+            tue 17:00;tue 18:00=4
+            sat 18:00;sat 19:00=1
+
+metric_156 = wed 05:00;wed 06:00=7
+            mon 03:00;mon 04:00=10
+            fri 09:00;fri 10:00=6
+            sun 11:00;sun 12:00=4
+            thu 05:00;thu 06:00=9
+
+metric_157 = sun 18:00;sun 19:00=9
+            tue 08:00;tue 09:00=4
+            fri 10:00;fri 11:00=2
+            wed 18:00;wed 19:00=6
+
+metric_158 = sun 08:00;sun 09:00=5
+            wed 11:00;wed 12:00=9
+            tue 07:00;tue 08:00=8
+            wed 03:00;wed 04:00=4
+
+metric_159 = mon 14:00;mon 15:00=3
+            wed 10:00;wed 11:00=8
+            wed 13:00;wed 14:00=7
+            wed 14:00;wed 15:00=2
+            tue 20:00;tue 21:00=1
+
+metric_160 = mon 04:00;mon 05:00=6
+            mon 20:00;mon 21:00=9
+            fri 08:00;fri 09:00=1
+            fri 17:00;fri 18:00=7
+            tue 20:00;tue 21:00=8
+
+metric_161 = thu 10:00;thu 11:00=9
+            thu 05:00;thu 06:00=2
+            thu 19:00;thu 20:00=1
+            sun 07:00;sun 08:00=10
+            thu 16:00;thu 17:00=2
+
+metric_162 = mon 19:00;mon 20:00=10
+            thu 00:00;thu 01:00=9
+            sat 13:00;sat 14:00=9
+            fri 03:00;fri 04:00=1
+            thu 20:00;thu 21:00=2
+
+metric_163 = tue 01:00;tue 02:00=7
+            wed 18:00;wed 19:00=9
+            fri 12:00;fri 13:00=3
+            thu 02:00;thu 03:00=2
+
+metric_164 = mon 09:00;mon 10:00=10
+            tue 08:00;tue 09:00=9
+            thu 03:00;thu 04:00=10
+
+metric_165 = sat 08:00;sat 09:00=2
+            fri 21:00;fri 22:00=9
+            mon 10:00;mon 11:00=5
+
+metric_166 = sun 16:00;sun 17:00=7
+            mon 21:00;mon 22:00=5
+            wed 20:00;wed 21:00=9
+
+metric_167 = fri 02:00;fri 03:00=10
+            tue 07:00;tue 08:00=4
+            sun 04:00;sun 05:00=2
+            sun 09:00;sun 10:00=9
+            wed 05:00;wed 06:00=2
+
+metric_168 = mon 21:00;mon 22:00=2
+            thu 21:00;thu 22:00=7
+            sat 05:00;sat 06:00=5
+
+metric_169 = tue 12:00;tue 13:00=2
+            wed 03:00;wed 04:00=2
+            fri 00:00;fri 01:00=4
+
+metric_170 = tue 20:00;tue 21:00=4
+            thu 10:00;thu 11:00=1
+            sat 07:00;sat 08:00=4
+
+metric_171 = fri 22:00;fri 23:00=6
+            sat 15:00;sat 16:00=10
+            thu 15:00;thu 16:00=4
+            sun 05:00;sun 06:00=1
+
+metric_172 = tue 03:00;tue 04:00=9
+            thu 07:00;thu 08:00=4
+            wed 01:00;wed 02:00=7
+            thu 12:00;thu 13:00=10
+
+metric_173 = tue 22:00;tue 23:00=1
+            sun 04:00;sun 05:00=3
+            sat 09:00;sat 10:00=10
+            tue 04:00;tue 05:00=4
+            thu 22:00;thu 23:00=3
+
+metric_174 = wed 22:00;wed 23:00=5
+            tue 11:00;tue 12:00=2
+            thu 12:00;thu 13:00=3
+            fri 02:00;fri 03:00=5
+            thu 15:00;thu 16:00=6
+
+metric_175 = thu 10:00;thu 11:00=4
+            fri 14:00;fri 15:00=5
+            sun 18:00;sun 19:00=5
+            wed 19:00;wed 20:00=4
+
+metric_176 = mon 10:00;mon 11:00=6
+            fri 19:00;fri 20:00=1
+            thu 11:00;thu 12:00=1
+
+metric_177 = sat 05:00;sat 06:00=5
+            tue 13:00;tue 14:00=5
+            thu 17:00;thu 18:00=3
+
+metric_178 = tue 07:00;tue 08:00=2
+            tue 20:00;tue 21:00=8
+            wed 20:00;wed 21:00=4
+            fri 12:00;fri 13:00=10
+            sat 07:00;sat 08:00=4
+
+metric_179 = sat 06:00;sat 07:00=8
+            fri 02:00;fri 03:00=7
+            mon 01:00;mon 02:00=10
+
+metric_180 = tue 01:00;tue 02:00=4
+            wed 21:00;wed 22:00=7
+            mon 15:00;mon 16:00=6
+            wed 15:00;wed 16:00=5
+
+metric_181 = fri 20:00;fri 21:00=1
+            mon 13:00;mon 14:00=8
+            tue 09:00;tue 10:00=3
+            mon 22:00;mon 23:00=3
+
+metric_182 = mon 07:00;mon 08:00=5
+            wed 16:00;wed 17:00=4
+            mon 03:00;mon 04:00=10
+            wed 19:00;wed 20:00=1
+            mon 14:00;mon 15:00=5
+
+metric_183 = fri 03:00;fri 04:00=4
+            wed 14:00;wed 15:00=7
+            thu 04:00;thu 05:00=6
+            thu 19:00;thu 20:00=10
+            wed 19:00;wed 20:00=6
+
+metric_184 = thu 16:00;thu 17:00=4
+            sat 01:00;sat 02:00=10
+            wed 12:00;wed 13:00=8
+            sun 09:00;sun 10:00=5
+            sat 09:00;sat 10:00=3
+
+metric_185 = mon 12:00;mon 13:00=3
+            tue 21:00;tue 22:00=2
+            thu 20:00;thu 21:00=9
+            thu 14:00;thu 15:00=9
+
+metric_186 = tue 00:00;tue 01:00=1
+            sun 17:00;sun 18:00=3
+            wed 17:00;wed 18:00=5
+            mon 08:00;mon 09:00=7
+
+metric_187 = tue 09:00;tue 10:00=10
+            sun 01:00;sun 02:00=6
+            tue 08:00;tue 09:00=3
+            sat 10:00;sat 11:00=9
+            tue 04:00;tue 05:00=6
+
+metric_188 = tue 13:00;tue 14:00=1
+            tue 04:00;tue 05:00=1
+            mon 11:00;mon 12:00=8
+            mon 06:00;mon 07:00=1
+            fri 20:00;fri 21:00=7
+
+metric_189 = sat 22:00;sat 23:00=1
+            thu 08:00;thu 09:00=1
+            mon 01:00;mon 02:00=9
+            wed 10:00;wed 11:00=7
+
+metric_190 = thu 06:00;thu 07:00=8
+            tue 06:00;tue 07:00=2
+            mon 02:00;mon 03:00=7
+            sun 02:00;sun 03:00=2
+            fri 07:00;fri 08:00=8
+
+metric_191 = thu 05:00;thu 06:00=6
+            sun 05:00;sun 06:00=3
+            mon 20:00;mon 21:00=3
+            sun 04:00;sun 05:00=6
+            sat 10:00;sat 11:00=9
+
+metric_192 = thu 16:00;thu 17:00=1
+            wed 11:00;wed 12:00=9
+            wed 16:00;wed 17:00=7
+            fri 06:00;fri 07:00=3
+
+metric_193 = sat 19:00;sat 20:00=8
+            mon 18:00;mon 19:00=8
+            mon 08:00;mon 09:00=8
+            fri 17:00;fri 18:00=2
+
+metric_194 = tue 19:00;tue 20:00=3
+            sat 20:00;sat 21:00=1
+            mon 05:00;mon 06:00=1
+            fri 02:00;fri 03:00=7
+            mon 09:00;mon 10:00=8
+
+metric_195 = tue 13:00;tue 14:00=10
+            wed 21:00;wed 22:00=1
+            thu 09:00;thu 10:00=1
+
+metric_196 = tue 01:00;tue 02:00=6
+            fri 15:00;fri 16:00=6
+            fri 09:00;fri 10:00=4
+            tue 08:00;tue 09:00=1
+            thu 11:00;thu 12:00=9
+
+metric_197 = mon 16:00;mon 17:00=10
+            sat 01:00;sat 02:00=7
+            wed 15:00;wed 16:00=2
+
+metric_198 = sun 22:00;sun 23:00=1
+            mon 12:00;mon 13:00=9
+            sat 19:00;sat 20:00=2
+            thu 17:00;thu 18:00=6
+            sun 14:00;sun 15:00=4
+
+metric_199 = mon 20:00;mon 21:00=1
+            fri 08:00;fri 09:00=2
+            tue 11:00;tue 12:00=7
+            sat 16:00;sat 17:00=7
+
+metric_200 = fri 16:00;fri 17:00=6
+            fri 12:00;fri 13:00=7
+            sun 06:00;sun 07:00=10
+            tue 01:00;tue 02:00=10
+
