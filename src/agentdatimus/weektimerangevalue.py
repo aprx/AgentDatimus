@@ -1,7 +1,11 @@
+""" metric configuration representation """
 from datetime import datetime
 from enum import IntEnum
 
 class WeekDay(IntEnum):
+    """
+    Represent week days.
+    """
     MONDAY = 1
     TUESDAY = 2
     WEDNESDAY = 3
@@ -27,7 +31,11 @@ STRTOWEEKDAY = {
 }
 
 class TimeBoundary():
-
+    """
+    A time boundary representation
+    Helper that define boundrary of a Week time range,
+    Each boundary is represented by a weekday and a time.
+    """
     def __init__(self, day: WeekDay, hour: int, minute: int):
         if not isinstance(day, WeekDay):
             raise ValueError('Day needs to be a valid WeekDay')
@@ -63,7 +71,7 @@ class TimeBoundary():
                 if self.inthour < other.hour * 100 + other.minute:
                     return True
             return False
-        raise NotImplemented()
+        raise NotImplementedError()
 
     def __le__(self, other):
         if isinstance(other, TimeBoundary):
@@ -80,7 +88,7 @@ class TimeBoundary():
                 if self.inthour <= other.hour * 100 + other.minute:
                     return True
             return False
-        raise NotImplemented()
+        raise NotImplementedError()
 
     def __gt__(self, other):
         if isinstance(other, TimeBoundary):
@@ -97,7 +105,7 @@ class TimeBoundary():
                 if self.inthour > other.hour * 100 + other.minute:
                     return True
             return False
-        raise NotImplemented()
+        raise NotImplementedError()
 
     def __ge__(self, other):
         if isinstance(other, TimeBoundary):
@@ -114,7 +122,7 @@ class TimeBoundary():
                 if self.inthour >= other.hour * 100 + other.minute:
                     return True
             return False
-        raise NotImplemented()
+        raise NotImplementedError()
 
     def __eq__(self, other):
         if isinstance(other, TimeBoundary):
@@ -129,10 +137,19 @@ class TimeBoundary():
                     self.minute == other.minute]):
                 return True
             return False
-        raise NotImplemented()
+        raise NotImplementedError()
 
     @classmethod
     def from_string(cls, buf: str):
+        """
+        Parse a string to instanciate a TimeBoundary
+
+        Args:
+          buf (str): A string that represent a boundary [mon|tue|wed|thu|fri|sat|sun] HH:MM
+
+        Returns:
+          (TimeBoundary) : the resulting TimeBoundary Object
+        """
         day = STRTOWEEKDAY.get(buf[:3])
         if day is None:
             raise ValueError(f'{buf[:3]} is not valid')
@@ -144,7 +161,10 @@ class TimeBoundary():
         return TimeBoundary(day, int(hour), int(minute))
 
 class WeekTimeRange():
-
+    """
+    Represent a WeekTimeRange defined by a beginning TimeBoundary
+    and an ending TimeBoundary.
+    """
     def __init__(self, begin: TimeBoundary, end: TimeBoundary):
         if end < begin:
             raise ValueError('Begin must be < to end')
@@ -158,12 +178,23 @@ class WeekTimeRange():
         return str(self)
 
     def match(self, dt: datetime) -> bool:
+        """
+        Returns True if the datetime is inside the WeekTimeRange
+
+        Args:
+         dt (datetime): a datetime to match against the WeekTimeRange
+
+        Returns:
+         (bool) : True if the datetime in the the WeekTimeRange.
+        """
         if self._begin <= dt <= self._end:
             return True
         return False
 
 class WeekTimeRangeValue(WeekTimeRange):
-
+    """
+    A Special WeekTimeRange that also associate a value property to the WeekTimeRange.
+    """
     def __init__(self, begin: TimeBoundary, end: TimeBoundary, value: int):
         self.value = value
         super().__init__(begin, end)
@@ -173,6 +204,14 @@ class WeekTimeRangeValue(WeekTimeRange):
 
     @classmethod
     def from_string(cls, buf):
+        """
+        Parse a buffer and return a the corresponding WeekTimeRangeValue object.
+        Args:
+          buf (str): A WeekTimeRangeValue definition such as day HH:MM;day HH:MM=value.
+
+        Returns:
+         (WeekTimeRangeValue): The resulting WeekTimeRangeValue Object.
+        """
         timerange, value = buf.split('=')
         if not value.isdigit():
             raise ValueError('{value} needs to be an int')

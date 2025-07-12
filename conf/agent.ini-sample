@@ -1,4 +1,4 @@
 [Agent]
 default_value=0
 sleep_time=2
-metric_files=conf/config.ini
+metric_files=conf/config.ini-sample
