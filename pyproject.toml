@@ -1,0 +1,31 @@
+[project]
+name = "agentdatimus"
+version = "0.1.0"
+description = "Agent for exposing custom Prometheus metrics based on config.ini"
+authors = [
+    { name = "Aprx", email = "github.payer672@passmail.net" }
+]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "prometheus_client==0.22.1"
+]
+
+[project.scripts]
+agentdatimus = "agentdatimus:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["agentdatimus"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.urls]
+Homepage = "https://github.com/aprx/AgentDatimus"
+Repository = "https://github.com/aprx/AgentDatimus"
+Issues = "https://github.com/aprx/AgentDatimus/issues"

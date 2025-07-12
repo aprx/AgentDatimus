@@ -1,0 +1,71 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+venv/
+env/
+ENV/
+*.env
+*.venv
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+
+# macOS / Linux / Windows junk
+.DS_Store
+Thumbs.db
+
+# Distribution / packaging
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# pip tools
+pip-wheel-metadata/
+*.wheel
+
+# Pytest / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.cache/
+
+# Logs
+*.log
+
+# Config
+*.ini
+*.cfg
+*.toml
+# Keep pyproject.toml
+!pyproject.toml
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# MyPy / Pyright / Pylint
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pytype/
+
+# VS Code local settings
+.settings/
+
+# Test output
+test-results/
+
+# Ignore local dev artifacts
+.envrc
+.env.*
