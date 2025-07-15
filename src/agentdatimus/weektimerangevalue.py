@@ -153,7 +153,9 @@ class TimeBoundary():
         day = STRTOWEEKDAY.get(buf[:3])
         if day is None:
             raise ValueError(f'{buf[:3]} is not valid')
-        hour, minute = buf[4:].split(':')
+        if ':' not in buf[4:]:
+            raise ValueError('Buffer should describe a valid time boundary')
+        hour, minute = buf[4:].split(':', 2)
         if not hour.isdigit():
             raise ValueError(f'{hour} is not a valid hour')
         if not minute.isdigit():
@@ -196,6 +198,8 @@ class WeekTimeRangeValue(WeekTimeRange):
     A Special WeekTimeRange that also associate a value property to the WeekTimeRange.
     """
     def __init__(self, begin: TimeBoundary, end: TimeBoundary, value: int):
+        if not isinstance(value, int):
+            raise ValueError('Value needs to be an int')
         self.value = value
         super().__init__(begin, end)
 
@@ -212,9 +216,13 @@ class WeekTimeRangeValue(WeekTimeRange):
         Returns:
          (WeekTimeRangeValue): The resulting WeekTimeRangeValue Object.
         """
+        if '=' not in buf:
+            raise ValueError(f'{buf} need to describe a valid weektimerange')
         timerange, value = buf.split('=')
         if not value.isdigit():
-            raise ValueError('{value} needs to be an int')
+            raise ValueError(f'{value} needs to be an int')
+        if ';' not in timerange:
+            raise ValueError(f'{timerange} need to describe a valid weektimerange')
         b_str, e_str = timerange.split(';')
         begin = TimeBoundary.from_string(b_str)
         end = TimeBoundary.from_string(e_str)
