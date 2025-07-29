@@ -4,6 +4,9 @@ import pytest
 from agentdatimus.weektimerangevalue import WeekDay, TimeBoundary, WeekTimeRange, WeekTimeRangeValue
 
 def test_boundaries():
+    """
+    test invalid input for boundaries
+    """
     with pytest.raises(ValueError):
         TimeBoundary('Monday', 1, 10)
     with pytest.raises(ValueError):
@@ -11,9 +14,18 @@ def test_boundaries():
     with pytest.raises(ValueError):
         TimeBoundary(WeekDay.MONDAY, 25, 42)
     with pytest.raises(ValueError):
+        TimeBoundary(WeekDay.MONDAY, -2, 42)
+    with pytest.raises(ValueError):
         TimeBoundary(WeekDay.MONDAY, 20, 92)
+    with pytest.raises(ValueError):
+        TimeBoundary(WeekDay.MONDAY, 20, -2)
+    x = TimeBoundary(WeekDay.MONDAY, 20, 42)
+    assert str(x) == 'Monday 20:42'
 
 def test_boundary_parsing():
+    """
+    Test invalid value for boundaries string representation
+    """
     with pytest.raises(ValueError):
         TimeBoundary.from_string('monday 09:00')
     with pytest.raises(ValueError):
@@ -24,6 +36,9 @@ def test_boundary_parsing():
         TimeBoundary.from_string('monmonmonmon')
 
 def test_boundray_operators():
+    """
+    Test boundaries operators.
+    """
     a = TimeBoundary(WeekDay.MONDAY, 20, 42)
     b = TimeBoundary(WeekDay.MONDAY, 20, 40)
     assert b < a
@@ -72,6 +87,7 @@ def test_weektimerange():
     a = TimeBoundary(WeekDay.TUESDAY, 20, 42)
     b = TimeBoundary(WeekDay.THURSDAY, 20, 42)
     t = WeekTimeRange(a, b)
+    assert str(t) == "WeekTimeRange from Tuesday 20:42 to Thursday 20:42"
     with pytest.raises(ValueError):
         WeekTimeRange(b, a)
     assert t.match(now)
@@ -80,7 +96,8 @@ def test_weektimerange():
 def test_weektimerangevalue():
     a = TimeBoundary(WeekDay.TUESDAY, 20, 42)
     b = TimeBoundary(WeekDay.THURSDAY, 20, 42)
-    WeekTimeRangeValue(a, b, 42)
+    x = WeekTimeRangeValue(a, b, 42)
+    assert str(x) == 'WeekTimeRangeValue from Tuesday 20:42 to Thursday 20:42 = 42'
     with pytest.raises(ValueError):
         WeekTimeRangeValue(a, b, 'fourtytwo')
 

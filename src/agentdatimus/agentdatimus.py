@@ -3,7 +3,8 @@
 from argparse import ArgumentParser
 import asyncio
 from datetime import datetime
-from configparser import ConfigParser
+from configparser import ConfigParser, NoSectionError, NoOptionError
+import os
 
 import logging
 
@@ -22,17 +23,50 @@ class AgentDatimus():
         Args:
          config_path (str): Path to agent.ini configuration file
         """
+        if not os.path.exists(config_path):
+            raise FileNotFoundError(f'{config_path} does not exist')
         self.metrics = {}
         config = ConfigParser()
         config.read(config_path)
-        self.default_value = int(config['Agent']['default_value'])
-        self.sleep_time = int(config['Agent']['sleep_time'])
 
-        metric_files = config['Agent']['metric_files']
+        self.load_agent_configuration(config)
+
+        metric_files = config.get('Agent', 'metric_files')
         for metric_file in metric_files.split('\n'):
+            if not os.path.exists(metric_file):
+                raise FileNotFoundError(f'Could not find file {metric_file}')
             metric_conf = ConfigParser()
             metric_conf.read(metric_file)
             self.load_metric_file(metric_conf)
+
+    def load_agent_configuration(self, config):
+        """
+          Load agentdate general configuration. From time betweens updates
+          to metrics files
+          Args :
+              config (ConfigParser): valid config of Agent
+
+        """
+        if 'Agent' not in config.sections():
+            raise NoSectionError('Missing agent section in agent configuration file')
+
+        value = config.get('Agent', 'default_value', fallback=None)
+        if value is not None:
+            if not value.isdigit():
+                raise ValueError('default_value in must be an integer')
+            self.default_value = int(value)
+
+        value = config.get('Agent', 'sleep_time', fallback=None)
+        if value is not None:
+            if not value.isdigit():
+                raise ValueError('sleep time must be an integer')
+            value = int(value)
+            if value <= 0:
+                raise ValueError('sleep time must be > 0')
+            if value < 2:
+                raise ValueError('Come on who needs this granularity ?')
+            self.sleep_time = value
+
 
     def load_metric_file(self, configuration):
         """
@@ -41,12 +75,27 @@ class AgentDatimus():
         Args:
           configuration (ConfigParser): metrics configuration
         """
+        default_value = None
+        prefix = None
+        value = configuration.get('Configuration', 'default_value',
+                                  fallback=None)
+        if value is not None:
+            if not value.isdigit():
+                raise ValueError('Configuration/default_value should be int')
+            default_value = int(value)
+        prefix = configuration.get('Configuration', 'prefix', fallback=None)
+
+        if 'metrics' not in configuration.sections():
+            raise NoSectionError('Missing metric section in metric file')
         for field in configuration['metrics']:
             timeranges = []
+            name = field if prefix is None else f'{prefix}{field}'
             data = {
-                'name': field,
-                'gauge': Gauge(field, f'AgentDatimus {field}'),
+                'name': name,
+                'gauge': Gauge(name, f'AgentDatimus {name}'),
             }
+            if default_value is not None:
+                data['default'] = default_value
             for line in configuration['metrics'][field].split('\n'):
                 line = line.strip()
                 if not line:
@@ -65,22 +114,29 @@ class AgentDatimus():
         """
         self.metrics[name] = data
 
+    def run_metric(self, metric, data, now):
+        """
+        Set the metric value according to now and data.
+        """
+        for tr in data['timeranges']:
+            if tr.match(now):
+                logger.debug('%s match timerange "%s", set to %s', metric, tr, tr.value)
+                data['gauge'].set(tr.value)
+                break
+        else:
+            value = data.get('default_value') if data.get('default_value') is not None else self.default_value
+            logger.debug('No matching timerange set %s to default (%s)', metric, value)
+            data['gauge'].set(value)
+
     async def run(self):
         """
-        run loop that set the metric when the
-        current time match a configured timerange.
+        Run loop that get the current time and compute the current value
+        to affect to each metric.
         """
         while True:
             now = datetime.now()
             for metric, data in self.metrics.items():
-                for tr in data['timeranges']:
-                    if tr.match(now):
-                        logger.debug('%s match timerange "%s", set to %s', metric, tr, tr.value)
-                        data['gauge'].set(tr.value)
-                        break
-                else:
-                    logger.debug('No matching timerange set %s to default', metric)
-                    data['gauge'].set(0)
+                self.run_metric(metric, data, now)
             end = datetime.now()
             logger.info('Computed %s metrics in %s', len(self.metrics), end - now)
             await asyncio.sleep(self.sleep_time)
@@ -94,7 +150,7 @@ def get_cl_parser():
                         default='conf/agent.ini')
     parser.add_argument('-l', '--listen-port', help="Prometheus scrapping port",
                         default=8000, type=int)
-    parser.add_argument('-d', '--debug', help="Debug ", action="store_true",
+    parser.add_argument('-d', '--debug', help="Debug flag", action="store_true",
                         default=False)
     return parser.parse_args()
 
