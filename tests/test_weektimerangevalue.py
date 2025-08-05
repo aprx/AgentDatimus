@@ -19,8 +19,13 @@ def test_boundaries():
         TimeBoundary(WeekDay.MONDAY, 20, 92)
     with pytest.raises(ValueError):
         TimeBoundary(WeekDay.MONDAY, 20, -2)
+
     x = TimeBoundary(WeekDay.MONDAY, 20, 42)
     assert str(x) == 'Monday 20:42'
+
+    x = TimeBoundary(WeekDay.MONDAY, 24, 0)
+    with pytest.raises(ValueError):
+        TimeBoundary(WeekDay.MONDAY, 24, 1)
 
 def test_boundary_parsing():
     """
@@ -34,6 +39,8 @@ def test_boundary_parsing():
         TimeBoundary.from_string('mon beforenoone:midnight')
     with pytest.raises(ValueError):
         TimeBoundary.from_string('monmonmonmon')
+
+    TimeBoundary.from_string('mon 09:00')
 
 def test_boundray_operators():
     """
@@ -93,6 +100,12 @@ def test_weektimerange():
     assert t.match(now)
     assert not t.match(anotherday)
 
+    a = TimeBoundary(WeekDay.WEDNESDAY, 23, 59)
+    b = TimeBoundary(WeekDay.WEDNESDAY, 24, 00)
+    t = WeekTimeRange(a, b)
+    now = datetime.strptime('2025/01/01 23:59:59', '%Y/%m/%d %H:%M:%S')
+    assert t.match(now)
+
 def test_weektimerangevalue():
     a = TimeBoundary(WeekDay.TUESDAY, 20, 42)
     b = TimeBoundary(WeekDay.THURSDAY, 20, 42)
@@ -112,3 +125,5 @@ def test_weektimerangevalue_parsing():
         WeekTimeRangeValue.from_string('coucou 10:10;tue10:10=42')
     with pytest.raises(ValueError):
         WeekTimeRangeValue.from_string('mon 10:10;coucou 10:10=42')
+
+    WeekTimeRangeValue.from_string('mon 10:10;tue 10:10=10')

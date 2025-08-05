@@ -39,14 +39,16 @@ class TimeBoundary():
     def __init__(self, day: WeekDay, hour: int, minute: int):
         if not isinstance(day, WeekDay):
             raise ValueError('Day needs to be a valid WeekDay')
-        if not isinstance(hour, int):
-            raise ValueError('hour needs to be a valid integer')
-        if not 0 <= hour <= 23:
-            raise ValueError('hour needs to be between 0 and 23')
         if not isinstance(minute, int):
             raise ValueError('minute needs to be a valid integer')
         if not 0 <= minute <= 59:
             raise ValueError('minute needs to be between 0 and 59')
+        if not isinstance(hour, int):
+            raise ValueError('hour needs to be a valid integer')
+        if not 0 <= hour <= 24:
+            raise ValueError('hour needs to be between 0 and 23')
+        if hour == 24 and minute != 0:
+            raise ValueError('Maximum hour:minute config is 24:00')
 
         self.day = day
         self.hour = hour
@@ -150,7 +152,7 @@ class TimeBoundary():
         Returns:
           (TimeBoundary) : the resulting TimeBoundary Object
         """
-        day = STRTOWEEKDAY.get(buf[:3])
+        day = STRTOWEEKDAY.get(buf[:3].lower())
         if day is None:
             raise ValueError(f'{buf[:3]} is not valid')
         if ':' not in buf[4:]:
@@ -189,7 +191,7 @@ class WeekTimeRange():
         Returns:
          (bool) : True if the datetime in the the WeekTimeRange.
         """
-        if self._begin <= dt <= self._end:
+        if self._begin <= dt < self._end:
             return True
         return False
 
