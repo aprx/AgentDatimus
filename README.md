@@ -21,13 +21,15 @@ It's particularly useful for defining dynamic thresholds that change throughout 
 ```ini
 [Agent]
 default_value = 0
-sleep_time = 2
+sleep_time = 30
 metric_files = conf/config.ini
 ```
 
 
  - `default_value`: Value used when no time range matches.
  - `sleep_time`: Time interval (in seconds) between metric recomputations.
+     The atomicity of the configuration being 1 minute, it's recommanded
+     to stay between 30s to 60s.
  - `metric_files`: Path to the metrics definition file.
 
 ### Metrics config (`config.ini`)
@@ -48,6 +50,16 @@ Format :
 <day start_time>;<day end_time>=<value>
 ```
 Supported day values: `mon`, `tue`, `wed`, `thu`, `fri`, `sat`, `sun`.
+
+
+It's also possible to add an optional `default_value` for all metrics in the configuration file and also add an optional `prefix` in a `Configuration` section that will prefix all metrics at once, as such :
+
+```ini
+[Configuration]
+default_value=12
+prefix=scope_1_
+
+```
 
 ## Installation
 

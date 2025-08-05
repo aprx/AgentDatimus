@@ -85,9 +85,9 @@ class AgentDatimus():
             default_value = int(value)
         prefix = configuration.get('Configuration', 'prefix', fallback=None)
 
-        if 'metrics' not in configuration.sections():
+        if 'Metrics' not in configuration.sections():
             raise NoSectionError('Missing metric section in metric file')
-        for field in configuration['metrics']:
+        for field in configuration['Metrics']:
             timeranges = []
             name = field if prefix is None else f'{prefix}{field}'
             data = {
@@ -96,13 +96,13 @@ class AgentDatimus():
             }
             if default_value is not None:
                 data['default'] = default_value
-            for line in configuration['metrics'][field].split('\n'):
+            for line in configuration['Metrics'][field].split('\n'):
                 line = line.strip()
                 if not line:
                     continue
                 timeranges.append(WeekTimeRangeValue.from_string(line))
             data['timeranges'] = timeranges
-            self.add_metric(field, data)
+            self.add_metric(name, data)
 
     def add_metric(self, name, data):
         """
@@ -124,7 +124,7 @@ class AgentDatimus():
                 data['gauge'].set(tr.value)
                 break
         else:
-            value = data.get('default_value') if data.get('default_value') is not None else self.default_value
+            value = data.get('default') if data.get('default') is not None else self.default_value
             logger.debug('No matching timerange set %s to default (%s)', metric, value)
             data['gauge'].set(value)
 
