@@ -14,6 +14,22 @@ It's particularly useful for defining dynamic thresholds that change throughout 
 
 ---
 
+## Usage
+```
+$ agentdatimus -h
+usage: agentdatimus [-h] [-c CONFIG] [-l LISTEN_PORT] [-d]
+
+AgentDatimus
+
+options:
+  -h, --help            show this help message and exit
+  -c CONFIG, --config CONFIG
+                        Path to agent.ini configuration
+  -l LISTEN_PORT, --listen-port LISTEN_PORT
+                        Prometheus scrapping port
+  -d, --debug           Debug flag
+```
+
 ## Configuration
 
 ### Agent Config (`agent.ini`)
@@ -37,12 +53,13 @@ metric_files = conf/config.ini
 Each metric is configured with one or more time slots and corresponding values:
 
 ```ini
-[metrics]
+[Metrics]
+
 metric_1 = fri 04:00;fri 05:00=8
-            fri 09:00;fri 10:00=7
-            fri 17:00;fri 18:00=3
-            thu 16:00;thu 17:00=9
-            sun 01:00;sun 02:00=7
+           fri 09:00;fri 10:00=7
+           fri 17:00;fri 18:00=3
+           thu 16:00;thu 17:00=9
+           sun 01:00;sun 02:00=7
 ```
 
 Format :
