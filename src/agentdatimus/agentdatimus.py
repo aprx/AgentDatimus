@@ -3,7 +3,7 @@
 from argparse import ArgumentParser
 import asyncio
 from datetime import datetime
-from configparser import ConfigParser, NoSectionError, NoOptionError
+from configparser import ConfigParser, NoSectionError
 import os
 
 import logging

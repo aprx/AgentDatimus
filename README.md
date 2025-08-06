@@ -87,3 +87,13 @@ $ pip install .
 $ agentdatimus -c /path/to/agent.ini
 
 ```
+
+## Docker / podman
+
+A Dockerfile is provided for convenience.
+
+```
+$ docker build -t agentdatimus .
+$ docker run -i --rm -v=./conf/:/usr/app/conf/ -p 8000:8000 agentdatimus:latest
+```
+
